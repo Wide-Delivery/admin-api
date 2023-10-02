@@ -5,7 +5,7 @@ services:
     container_name: ms-delivery-kotlin
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.ms-delivery-kotlin.rule=PathPrefix: /kotlin"
+      - "traefik.http.routers.ms-delivery-kotlin.rule=PathPrefix:(`/kotlin`)"
     user: root
     build:
       context: .
